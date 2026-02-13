@@ -6,13 +6,22 @@ namespace User_Input_Assignment
     {
         static void Main(string[] args)
         {
-            Part1();
-            Part2();
-            Part3();
-            Part4();
-            Part5();
+            Console.WriteLine("Which part of the code would you like to run (choose between 1-5)");
+            Console.WriteLine("1 - Name Age and Salary");
+            Console.WriteLine("2 - More User Input of Data");
+            Console.WriteLine("3 - Age in 5 Years");
+            Console.WriteLine("4 - A Dumb Calculator");
+            Console.WriteLine("5 - The Cash Register");
+            int choice = Convert.ToInt32(Console.ReadLine());
 
-            Console.ReadLine();
+            if (choice == 1) Part1();
+            else if (choice == 2) Part2();
+            else if (choice == 3) Part3();
+            else if (choice == 4) Part4();
+            else if (choice == 5) Part5();
+            else Console.WriteLine("Invalid number :(");
+
+                Console.ReadLine();
         }
 
         static void Part1()
@@ -62,7 +71,7 @@ namespace User_Input_Assignment
             Console.WriteLine("\tLogin:\t" + login);
             Console.WriteLine("\tID:\t" + id);
             Console.WriteLine("\tName:\t" + firstName + " " + lastName);
-            Console.WriteLine("\tAverage:\t" + average + "%");
+            Console.WriteLine("\tAverage:" + average + "%");
             Console.WriteLine("\tGrade:\t" + grade);
             Console.WriteLine();
         }
